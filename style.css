@@ -1,14 +1,14 @@
 @font-face {
-  font-family: satoshi;
-  src: url(./Satoshi-Light.woff);
+  font-family: chillax;
+  src: url(./Chillax-Regular.woff);
 }
 @font-face {
   font-family: roboto;
   src: url(./roboto_mono.woff2);
 }
 @font-face {
-  font-family: chillax;
-  src: url(./Chillax-Regular.woff);
+  font-family: satoshi;
+  src: url(./Satoshi-Light.woff);
 }
 * {
   margin: 0;
@@ -20,6 +20,177 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: #1a1a1a;
+  background: #121212;
   color: #fafafa;
+}
+
+#banner {
+  max-width: 1900px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+main nav {
+  height: 8.5vh;
+  width: 100%;
+  font-family: chillax;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main nav #navBtns {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+main nav #navBtns #cart {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-family: roboto;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main nav #navBtns #menu {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main nav #navBtns #menu i {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+main #banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #banner #top {
+  width: 100%;
+}
+main #banner #top img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main #banner #bottom {
+  width: 100%;
+  background-color: #1E1E1E;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 0.7rem;
+  padding: 1.75rem;
+}
+main #banner #bottom p {
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+}
+main #banner #bottom #textWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #banner #bottom #textWrapper h1 {
+  font-size: 2.25rem;
+  font-family: chillax;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #f4f2ed;
+  letter-spacing: 1px;
+}
+main #banner #bottom #textWrapper p {
+  letter-spacing: 1px;
+  font-family: satoshi;
+  font-size: 1.25rem;
+  text-transform: none;
+  color: rgba(244, 242, 237, 0.6);
+  line-height: 160%;
+  padding-bottom: 17px;
+}
+main #banner #bottom #textWrapper button {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: roboto;
+  font-size: 0.875rem;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  line-height: 160%;
+  color: rgb(244, 242, 237);
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+main #banner #bottom #textWrapper button i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  main #banner {
+    flex-direction: row;
+    height: 48rem;
+  }
+  main #banner #top, main #banner #bottom {
+    width: 50%;
+  }
+  main #banner #top {
+    height: 100%;
+  }
+  main #banner #top img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #banner #bottom {
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 3rem;
+  }
+  main #banner #bottom #textWrapper {
+    width: 100%;
+  }
+  main #banner #bottom #textWrapper h1 {
+    font-size: 4rem;
+  }
+  main #banner #bottom #textWrapper p {
+    padding-bottom: 2.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
