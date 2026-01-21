@@ -29,7 +29,9 @@ nav,
 #counters,
 #philosophy,
 #vision,
-#team {
+#team,
+#joinTeam,
+#contact {
   max-width: 1900px;
 }
 
@@ -325,9 +327,12 @@ main #team {
 }
 main #team .text {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2.5rem;
+  padding-inline: 1rem;
 }
 main #team .text h2 {
-  padding-inline: 1rem;
   font-size: 2rem;
   font-family: chillax;
   font-weight: 400;
@@ -443,6 +448,127 @@ main #team .profile2 {
 main #team .profile3 {
   background: url(./team-03.webp);
 }
+main #joinTeam {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main #joinTeam .top {
+  width: 100%;
+}
+main #joinTeam .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main #joinTeam .bottom {
+  width: 100%;
+  padding: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.7rem;
+}
+main #joinTeam .bottom p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(244, 242, 237, 0.6);
+  padding-bottom: 1rem;
+}
+main #joinTeam .bottom h2 {
+  font-size: 2rem;
+  font-family: chillax;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 37.5rem;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+main #joinTeam .bottom button {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: roboto;
+  font-size: 0.875rem;
+  background-color: transparent;
+  border: none;
+  line-height: 160%;
+  color: rgb(244, 242, 237);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+main #joinTeam .bottom button i {
+  transform: rotate(-135deg);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+main #contact {
+  background-color: #cebd63;
+  width: 100%;
+  padding: 1.75rem;
+  border-radius: 0.7rem;
+}
+main #contact p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  color: rgba(244, 242, 237, 0.6);
+  padding-bottom: 1rem;
+  color: #1a1a1a;
+}
+main #contact h2 {
+  font-size: 2rem;
+  font-family: chillax;
+  font-weight: 400;
+  line-height: 100%;
+  max-width: 37.5rem;
+  width: 90%;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+main #contact button {
+  cursor: pointer;
+  width: 100%;
+  font-family: roboto;
+  font-size: 0.875rem;
+  background-color: #1a1a1a;
+  border: none;
+  line-height: 160%;
+  color: rgb(244, 242, 237);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.35rem;
+}
+main #contact button i {
+  transform: rotate(-135deg);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 1024px) {
   main #banner {
@@ -538,7 +664,37 @@ main #team .profile3 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
+  main #team .text button {
+    opacity: 1;
+  }
   main #team .profiles {
     flex-direction: row;
+  }
+  main #joinTeam {
+    flex-direction: row;
+  }
+  main #joinTeam .top,
+  main #joinTeam .bottom {
+    width: 50%;
+  }
+  main #joinTeam .bottom h2 {
+    margin-bottom: 7rem;
+    font-size: 2.5rem;
+  }
+  main #contact {
+    position: relative;
+    overflow: hidden;
+  }
+  main #contact h2 {
+    width: 80%;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+  }
+  main #contact button {
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -33,7 +33,9 @@ nav,
 #counters,
 #philosophy,
 #vision,
-#team {
+#team,
+#joinTeam,
+#contact {
   max-width: 1900px;
 }
 main {
@@ -291,8 +293,12 @@ main {
     @include flexBox();
     .text {
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-block: 2.5rem;
+      padding-inline: 1rem;
+
       h2 {
-        padding-inline: 1rem;
         font-size: 2rem;
         font-family: chillax;
         font-weight: 400;
@@ -390,14 +396,128 @@ main {
         }
       }
     }
-    .profile1{
+    .profile1 {
       background: url(./team-01.webp);
     }
-    .profile2{
+    .profile2 {
       background: url(./team-02.webp);
     }
-    .profile3{
+    .profile3 {
       background: url(./team-03.webp);
+    }
+  }
+  #joinTeam {
+    width: 100%;
+    @include flexBox(0.5rem);
+    .top {
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      width: 100%;
+      padding: 1.75rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 0.7rem;
+      p {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+        color: rgba(244, 242, 237, 0.6);
+        padding-bottom: 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+        font-family: chillax;
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 37.5rem;
+        width: 90%;
+        margin-bottom: 4rem;
+      }
+      button {
+        cursor: pointer;
+        width: fit-content;
+        font-family: roboto;
+        font-size: 0.875rem;
+        background-color: transparent;
+        border: none;
+        line-height: 160%;
+        color: rgb(244, 242, 237);
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        i {
+          transform: rotate(-135deg);
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          font-size: 1rem;
+          @include flexBox();
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  #contact {
+    background-color: #cebd63;
+    width: 100%;
+    padding: 1.75rem;
+    border-radius: 0.7rem;
+    p {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 160%;
+      color: rgba(244, 242, 237, 0.6);
+      padding-bottom: 1rem;
+      color: #1a1a1a;
+    }
+    h2 {
+      font-size: 2rem;
+      font-family: chillax;
+      font-weight: 400;
+      line-height: 100%;
+      max-width: 37.5rem;
+      width: 90%;
+      color: #1a1a1a;
+      margin-bottom: 2rem;
+    }
+    button {
+      cursor: pointer;
+      width: 100%;
+      font-family: roboto;
+      font-size: 0.875rem;
+      background-color: #1a1a1a;
+      border: none;
+      line-height: 160%;
+      color: rgb(244, 242, 237);
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      padding: 1rem;
+      border-radius: 0.35rem;
+      i {
+        transform: rotate(-135deg);
+        font-size: 1rem;
+        @include flexBox();
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
@@ -499,9 +619,42 @@ main {
         }
       }
     }
-    #team{
-      .profiles{
+    #team {
+      .text {
+        button {
+          opacity: 1;
+        }
+      }
+      .profiles {
         flex-direction: row;
+      }
+    }
+    #joinTeam {
+      flex-direction: row;
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        h2 {
+          margin-bottom: 7rem;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    #contact {
+      position: relative;
+      overflow: hidden;
+      h2 {
+        width: 80%;
+        margin-bottom: 0;
+        font-size:3.5rem;
+      }
+      button {
+        width: fit-content;
+        position: absolute;
+        right: 10%;
+        bottom: 30%;
       }
     }
   }
