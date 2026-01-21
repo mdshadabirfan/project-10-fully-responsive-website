@@ -24,7 +24,10 @@ body {
   color: #fafafa;
 }
 
-#banner {
+nav,
+#banner,
+#counters,
+#philosophy {
   max-width: 1900px;
 }
 
@@ -94,7 +97,7 @@ main #banner #top img {
 }
 main #banner #bottom {
   width: 100%;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -162,13 +165,164 @@ main #banner #bottom #textWrapper button i {
   justify-content: center;
   align-items: center;
 }
+main #counters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+}
+main #counters .top,
+main #counters .bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+main #counters .top .element,
+main #counters .bottom .element {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+}
+main #counters .top .element small,
+main #counters .bottom .element small {
+  font-size: 0.875rem;
+  font-family: roboto;
+  color: rgba(244, 242, 237, 0.6);
+  letter-spacing: 1px;
+  line-height: 160%;
+}
+main #counters .top .element h2,
+main #counters .bottom .element h2 {
+  margin-top: 0.5rem;
+  font-size: 2.25rem;
+  font-family: chillax;
+  color: #f4f2ed;
+  font-weight: 400;
+  line-height: 110%;
+}
+main #philosophy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #philosophy .top {
+  width: 100%;
+}
+main #philosophy .top img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main #philosophy .bottom {
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 0.7rem;
+  padding: 1.75rem;
+}
+main #philosophy .bottom p {
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+}
+main #philosophy .bottom .textWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #philosophy .bottom .textWrapper h2 {
+  font-size: 2rem;
+  font-family: chillax;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #f4f2ed;
+  letter-spacing: 1px;
+}
+main #philosophy .bottom .textWrapper .paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+main #philosophy .bottom .textWrapper .paragraphs p {
+  letter-spacing: 1px;
+  font-family: satoshi;
+  font-size: 1rem;
+  text-transform: none;
+  color: rgba(244, 242, 237, 0.6);
+  line-height: 160%;
+}
+main #vision {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #vision .top {
+  width: 100%;
+}
+main #vision .top img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+main #vision .bottom {
+  width: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-radius: 0.7rem;
+  padding: 1.75rem;
+}
+main #vision .bottom p {
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+}
+main #vision .bottom .textWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main #vision .bottom .textWrapper h2 {
+  font-size: 4rem;
+  font-family: chillax;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #f4f2ed;
+  letter-spacing: 1px;
+}
+main #vision .bottom .textWrapper .paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+main #vision .bottom .textWrapper .paragraphs p {
+  letter-spacing: 1px;
+  font-family: satoshi;
+  font-size: 1rem;
+  text-transform: none;
+  color: rgba(244, 242, 237, 0.6);
+  line-height: 160%;
+}
 
 @media (min-width: 1024px) {
   main #banner {
     flex-direction: row;
     height: 48rem;
   }
-  main #banner #top, main #banner #bottom {
+  main #banner #top,
+  main #banner #bottom {
     width: 50%;
   }
   main #banner #top {
@@ -192,5 +346,66 @@ main #banner #bottom #textWrapper button i {
   }
   main #banner #bottom #textWrapper p {
     padding-bottom: 2.2rem;
+  }
+  main #counters {
+    flex-direction: row;
+  }
+  main #counters .top,
+  main #counters .bottom {
+    width: 50%;
+  }
+  main #counters .top .element h2,
+  main #counters .bottom .element h2 {
+    font-size: 2.8rem;
+  }
+  main #philosophy {
+    flex-direction: row-reverse;
+  }
+  main #philosophy .top, main #philosophy .bottom {
+    width: 50%;
+  }
+  main #philosophy .top img {
+    height: 41rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  main #philosophy .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main #philosophy .bottom .textWrapper h2 {
+    font-size: 2.7rem;
+  }
+  main #philosophy .bottom .textWrapper .paragraphs {
+    flex-direction: row;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  main #vision {
+    flex-direction: row;
+  }
+  main #vision .top, main #vision .bottom {
+    width: 50%;
+  }
+  main #vision .top img {
+    height: 41rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  main #vision .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main #vision .bottom .textWrapper h2 {
+    font-size: 2.7rem;
+  }
+  main #vision .bottom .textWrapper .paragraphs {
+    flex-direction: row;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
