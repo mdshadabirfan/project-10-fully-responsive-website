@@ -27,7 +27,9 @@ body {
 nav,
 #banner,
 #counters,
-#philosophy {
+#philosophy,
+#vision,
+#team {
   max-width: 1900px;
 }
 
@@ -294,7 +296,7 @@ main #vision .bottom .textWrapper {
   gap: 0.7rem;
 }
 main #vision .bottom .textWrapper h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: chillax;
   font-weight: 400;
   text-transform: uppercase;
@@ -314,6 +316,132 @@ main #vision .bottom .textWrapper .paragraphs p {
   text-transform: none;
   color: rgba(244, 242, 237, 0.6);
   line-height: 160%;
+}
+main #team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+main #team .text {
+  width: 100%;
+}
+main #team .text h2 {
+  padding-inline: 1rem;
+  font-size: 2rem;
+  font-family: chillax;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #f4f2ed;
+  letter-spacing: 1px;
+}
+main #team .text button {
+  opacity: 0;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: roboto;
+  font-size: 0.875rem;
+  background-color: transparent;
+  border: none;
+  line-height: 160%;
+  color: rgb(244, 242, 237);
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+main #team .text button i {
+  transform: rotate(-135deg);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+main #team .profiles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main #team .profiles .profileCard {
+  border-radius: 0.7rem;
+  width: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+}
+main #team .profiles .profileCard .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+main #team .profiles .profileCard .top button {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  color: rgb(244, 242, 237);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+main #team .profiles .profileCard .top button i {
+  font-size: 1rem;
+  font-weight: 300;
+}
+main #team .profiles .profileCard .bottom {
+  border-radius: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+main #team .profiles .profileCard .bottom h3 {
+  font-family: Chillax, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
+}
+main #team .profiles .profileCard .bottom p {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+main #team .profile1 {
+  background: url(./team-01.webp);
+}
+main #team .profile2 {
+  background: url(./team-02.webp);
+}
+main #team .profile3 {
+  background: url(./team-03.webp);
 }
 
 @media (min-width: 1024px) {
@@ -361,7 +489,8 @@ main #vision .bottom .textWrapper .paragraphs p {
   main #philosophy {
     flex-direction: row-reverse;
   }
-  main #philosophy .top, main #philosophy .bottom {
+  main #philosophy .top,
+  main #philosophy .bottom {
     width: 50%;
   }
   main #philosophy .top img {
@@ -386,7 +515,8 @@ main #vision .bottom .textWrapper .paragraphs p {
   main #vision {
     flex-direction: row;
   }
-  main #vision .top, main #vision .bottom {
+  main #vision .top,
+  main #vision .bottom {
     width: 50%;
   }
   main #vision .top img {
@@ -401,11 +531,14 @@ main #vision .bottom .textWrapper .paragraphs p {
     padding: 3rem;
   }
   main #vision .bottom .textWrapper h2 {
-    font-size: 2.7rem;
+    font-size: 2.65rem;
   }
   main #vision .bottom .textWrapper .paragraphs {
     flex-direction: row;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+  main #team .profiles {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
